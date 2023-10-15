@@ -4,10 +4,10 @@ const path = require("path");
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/Views/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 app.get("/return", (req, res) => {
-  res.sendFile(path.join(__dirname + "/Views/returnPage.html"));
+  res.sendFile(path.join(__dirname + "/returnPage.html"));
 });
 
 app.listen(port, () => {
